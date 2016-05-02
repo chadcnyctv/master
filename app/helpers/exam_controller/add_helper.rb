@@ -1,0 +1,2 @@
+module ExamController::AddHelper
+end

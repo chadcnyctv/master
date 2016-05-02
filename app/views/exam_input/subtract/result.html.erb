@@ -1,0 +1,6 @@
+<%= @form.num1 %>-<%= @form.num2 %> = <%= @subtract %>
+<%= form_for @form, {url:'input', method: :get} do |f| %>
+  <%= f.hidden_field :num1 %>
+  <%= f.hidden_field :num2 %>
+  <%= f.submit '戻る' %>
+<% end %>

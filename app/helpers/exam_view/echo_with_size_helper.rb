@@ -1,0 +1,2 @@
+module ExamView::EchoWithSizeHelper
+end

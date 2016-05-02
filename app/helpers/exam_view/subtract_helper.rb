@@ -1,0 +1,2 @@
+module ExamView::SubtractHelper
+end

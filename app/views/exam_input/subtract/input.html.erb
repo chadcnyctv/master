@@ -1,0 +1,37 @@
+<%= form_for @form, {url:'result', method: :get} do |f| %>
+  <%= f.text_field :num1 %>-<%= f.text_field :num2 %>
+  <%= f.submit '計算' %>
+<% end %>
+
+<%= form_for @form, {url:'result', method: :get} do |f| %>
+  <%= f.select :num1, @nums %> - <%= f.select :num2, @nums %>
+  <%= f.submit '計算' %>
+<% end %>
+
+<%= form_for @form, {url:'result', method: :get} do |f| %>
+<dl>
+  <dt>数値１</dt>
+  <dd>
+    <% @nums.each do |num| %>
+      <%= f.radio_button :num1, num %><%= num %>
+    <% end %>
+  </dd>
+  <dt>数値２</dt>
+  <dd>
+    <% @nums.each do |num| %>
+      <%= f.radio_button :num2, num %><%= num %>
+    <% end %>
+  </dd>
+  <%= f.submit '計算' %>
+</dl>
+<% end %>
+
+<%= form_for @form, {url:'result', method: :get} do |f| %>
+  <%= f.password_field :num1 %>
+  <%= f.password_field :num2 %>
+  <%= f.submit '計算' %>
+<% end %>
+
+<%= form_for @form, {url:'result', method: :get} do |f| %>
+  <%= f.range_field :num1, min:0, max:10 , size:10 %>
+<% end %>

@@ -1,0 +1,2 @@
+module ExamInput::SubtractHelper
+end
